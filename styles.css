@@ -15,6 +15,7 @@
     height: 100vh;
     display: grid;
     grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr 5fr;
   }
   
   .container div {
@@ -28,17 +29,26 @@
     grid-column: 1 / -1;
     display: grid;
     grid-template-columns: 1fr 2fr;
+    border: 2px solid white;
+
   }
   
   .logo {
+    align-self: normal;
     justify-self: left;
-    align-self: center;
     grid-column: 1 / 2;
     grid-row: 1 / 2;
+    border: 2px solid white;
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
   }
   
   .menu {
     align-self: center;
+    border: 2px solid white;
+
   }
   
   .menu ul {
@@ -58,6 +68,8 @@
     grid-row: 2 / span 2;
     display: grid;
     gap: 50px;
+    border: 2px solid white;
+
   }
   
   .sidebar .photo {
@@ -87,6 +99,8 @@
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     grid-template-rows: repeat(2, 1fr);
     gap: 15px;
+    border: 2px solid white;
+
   }
   
   .article p {
