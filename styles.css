@@ -38,13 +38,16 @@
     justify-self: left;
     grid-column: 1 / 2;
     grid-row: 1 / 2;
-    border: 2px solid white;
-    
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
     align-items: center;
+    gap: 20px;
   }
   
+  .logo-title {
+    font-size: 36px;
+    font-weight: bold;
+  }
+
   .menu {
     align-self: center;
     border: 2px solid white;
@@ -67,29 +70,18 @@
     background-color: #0f172a;
     grid-row: 2 / span 2;
     display: grid;
-    gap: 50px;
+    grid-template-rows: repeat(10, 1fr);
     border: 2px solid white;
 
   }
   
-  .sidebar .photo {
-    color: black;
-    border: 2px solid #8b5cf6;
-    font-size: 12px;
-    font-weight: normal;
-    border-radius: 10px;
-  }
-  
-  .side-content,
-  .photo  {
-    display: grid; 
-    align-items: center;
-  }
-  
   .sidebar .side-content {
-    border: 2px solid #8b5cf6;
     font-size: 16px;
-    font-weight: normal;
+    font-weight: bold;
+
+    display: flex;
+    align-items: center;
+    gap: 20px;
   }
 
   .article {
