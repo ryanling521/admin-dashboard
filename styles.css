@@ -126,7 +126,8 @@
   display: flex;
   align-items: center;
   gap: 20px;
-  padding-bottom: 30px;
+  transition: all .07s ease;
+  /* padding-bottom: 30px; */
   
 }
 
@@ -139,7 +140,7 @@
   display: flex;
   flex-direction: column;
   justify-content: start;
-
+  gap: 30px;
 }
 
 .sidebar .sidebar-bottom {
@@ -155,8 +156,11 @@
   height: 24px;
 }
 
-.sidebar .sidebar-top:nth-child(3) {
-  border: 2px solid red;
+/* make sidebar elements hover effect except logo */
+.sidebar .sidebar-top > *:not(:first-child):hover {
+  /* position: relative;
+  right: 50px; */
+  border-left: 5px solid #E6007E;
 }
 
 .article {
