@@ -210,6 +210,10 @@
   font-weight: 600;
 }
 
+.card .card-img {
+  width: 5rem;
+}
+
 .card .tags {
   display: flex;
   gap: 1rem;
