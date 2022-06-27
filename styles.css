@@ -151,9 +151,6 @@
   flex-direction: column;
   justify-content: end;
   gap: 30px;
-
-
-
 }
 
 .side-content .icon {
@@ -172,10 +169,6 @@
   grid-row: 2 / 3;
   /* border: 2px solid red; */
   padding-top: 0px;
-
-
-
-
   background-color: #212C3D;
 
   display: flex;
@@ -193,10 +186,8 @@
 
 .article {
   display: grid;
-  /* border: 2px solid red; */
-
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  /* grid-template-rows: repeat(2, 1fr); */
   gap: 20px;
 }
 
@@ -208,22 +199,38 @@
   padding: 10px;
   
   text-align: center;
-}
-
-.article p {
-  font-size: 18px;
-  text-align: center;
-}
-
-.card p {
-  font-weight: normal;
-  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
 }
 
 .card .title {
   font-size: 18px;
-  text-align: center;
+  font-weight: 600;
 }
+
+.card .tags {
+  display: flex;
+  gap: 1rem;
+  font-size: 12px;
+}
+
+.card .tags .tag {
+  border: 2px solid white;
+  border-radius: 2rem;
+  padding: .2rem 1.5rem;
+  min-width: 9em;
+  background-color: #E6007E;
+  border: none;
+  font-weight: 600;
+}
+
+.card .content {
+  font-size: 14px;
+  font-weight: normal;
+}
+
 
 #btn {
   width: 150px;
