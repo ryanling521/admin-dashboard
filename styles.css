@@ -254,7 +254,7 @@
 
 
 #btn {
-  width: 200px;
+  width: 12rem;
   border-radius: .5em;
   background-color: #011D29;
   border: 2px solid #E6007E;
@@ -274,7 +274,7 @@
 }
 
 #btn:hover {
-  box-shadow: inset 150px 0 0 0 #E6007E;
+  box-shadow: inset 12rem 0 0 0 #E6007E;
   color: #011D29;
 }
 
